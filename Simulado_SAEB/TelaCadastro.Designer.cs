@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastro));
             Text_Usuario = new TextBox();
             Text_Senha = new TextBox();
             Cadastrar = new Button();
@@ -74,6 +75,7 @@
             Controls.Add(Cadastrar);
             Controls.Add(Text_Senha);
             Controls.Add(Text_Usuario);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TelaCadastro";
             Text = "TelaCadastro";
             Load += TelaCadastro_Load;

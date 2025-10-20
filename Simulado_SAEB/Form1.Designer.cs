@@ -81,6 +81,7 @@
             Controls.Add(Login);
             Controls.Add(Cadastro);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
