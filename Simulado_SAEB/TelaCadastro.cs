@@ -34,24 +34,6 @@ namespace Simulado_SAEB
             usuario = Text_Usuario.Text;
         }
 
-        private void Text_Senha_TextChanged(object sender, EventArgs e)
-        {
-            senha = Text_Senha.Text;
-
-            using (MD5 md5 = MD5.Create())
-            {
-                byte[] inputBytes = Encoding.UTF8.GetBytes(senha);
-                byte[] hashBytes = md5.ComputeHash(inputBytes);
-
-                // Converte bytes para string hexadecimal
-                StringBuilder sb = new StringBuilder();
-                foreach (byte b in hashBytes)
-                {
-                    sb.Append(b.ToString("x2"));
-                }
-                senhacrip = sb.ToString();
-            }
-        }
 
         static string conexao = "Server=127.0.0.1;Port=3306;Database=onfly;Uid=root;Pwd='' ;";
 
@@ -85,6 +67,25 @@ namespace Simulado_SAEB
             inserirdados(usuario, senhacrip);
             this.Close();
             f1.Show();
+        }
+
+        private void Text_Senha_TextChanged(object sender, EventArgs e)
+        {
+            senha = Text_Senha.Text;
+
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(senha);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                // Converte bytes para string hexadecimal
+                StringBuilder sb = new StringBuilder();
+                foreach (byte b in hashBytes)
+                {
+                    sb.Append(b.ToString("x2"));
+                }
+                senhacrip = sb.ToString();
+            }
         }
     }
 }

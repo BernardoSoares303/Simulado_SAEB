@@ -21,7 +21,9 @@ namespace Simulado_SAEB
 
         private void Login_Click(object sender, EventArgs e)
         {
-
+            TelaLogin telaLogin = new TelaLogin();
+            this.Hide();
+            telaLogin.Show();
         }
     }
 }
