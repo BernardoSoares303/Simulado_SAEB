@@ -40,6 +40,7 @@
             Text_Usuario.Name = "Text_Usuario";
             Text_Usuario.Size = new Size(376, 43);
             Text_Usuario.TabIndex = 0;
+            Text_Usuario.Text = "Usuario:";
             Text_Usuario.TextChanged += Text_Usuario_TextChanged;
             // 
             // Text_Senha
@@ -49,6 +50,7 @@
             Text_Senha.Name = "Text_Senha";
             Text_Senha.Size = new Size(376, 43);
             Text_Senha.TabIndex = 1;
+            Text_Senha.Text = "Senha:";
             Text_Senha.TextChanged += Text_Senha_TextChanged;
             // 
             // Cadastrar

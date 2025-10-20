@@ -40,6 +40,7 @@
             Login_Usuario.Name = "Login_Usuario";
             Login_Usuario.Size = new Size(376, 43);
             Login_Usuario.TabIndex = 1;
+            Login_Usuario.Text = "Usuario:";
             Login_Usuario.TextChanged += Login_Usuario_TextChanged_1;
             // 
             // Login_Senha
@@ -49,6 +50,7 @@
             Login_Senha.Name = "Login_Senha";
             Login_Senha.Size = new Size(376, 43);
             Login_Senha.TabIndex = 2;
+            Login_Senha.Text = "Senha:";
             Login_Senha.TextChanged += Login_Senha_TextChanged_1;
             // 
             // Login
