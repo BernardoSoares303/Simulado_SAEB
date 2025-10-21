@@ -20,6 +20,8 @@ namespace Simulado_SAEB
         string senha;
         string senhacrip;
 
+        TelaPrincipal principal = new TelaPrincipal();
+
 
         public TelaLogin()
         {
@@ -73,6 +75,7 @@ namespace Simulado_SAEB
             if (ValidarLogin(usuario, senhacrip) == 1)
             {
                 this.Close();
+                principal.Show();
             }
             else
             {
